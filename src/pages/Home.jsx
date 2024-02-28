@@ -46,6 +46,51 @@ function Home() {
 
   };
 
+  var settings2 = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 7,
+    slidesToScroll: 7,
+    arrows: true,
+
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: true
+        }
+      },
+
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  }
+
   return (
     <>
       <Navbar />
@@ -60,15 +105,26 @@ function Home() {
                 <div className="main-btn"><a href="">See More</a></div>
               </div>
             </div>
-            <div className="carousel-container scard-container">
-              {category.map(category => (
-                <a href="cat/{category.id}" className='text-decoration-none text-dark'>
-                <SCard key={category.id}
-                  title={category.title}
-                  img={category.img} />
-                  </a>
-              ))}
-              
+            <div className="carousel-container category">
+              <Slider {...settings2}>
+                {category.map(category => (
+                  // <a href="cat/{category.id}" className='text-decoration-none text-dark'>
+                  // <SCard key={category.id}
+                  //   title={category.title}
+                  //   img={category.img} />
+                  //   </a>
+
+
+                  <div className='w-100 d-flex justify-content-center '>
+
+                    <SCard key={category.id}
+                      title={category.title}
+                      img={category.img} />
+
+                  </div>
+
+                ))}
+              </Slider>
             </div>
 
             <div className="col-12">

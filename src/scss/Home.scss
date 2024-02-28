@@ -9,7 +9,7 @@ main {
         padding: 0px 20px;
     }
 
-    .scard-container{
+    .scard-container {
         display: flex;
         gap: 15px;
         max-width: 1200px;
@@ -17,6 +17,7 @@ main {
         margin: auto;
 
     }
+
     .promo {
         img {
             border-radius: 25px;
@@ -27,6 +28,23 @@ main {
     .slick-list {
         margin: 0 -0px;
     }
+
+    .category {
+        .slick-track {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        .slick-dots li button{
+            display: none;
+        }
+
+        .slick-prev:before, .slick-next:before{
+            color: gray;
+            font-size: 18px;
+        }
+    }
+
+
 
     .slick-slide>div {
         padding: 0 10px;

@@ -1,12 +1,14 @@
 .scard{
-    width: 140px;
-    padding: 10px;
+    max-width: 140px;
+    padding: 30px;
+    max-height: 140px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    transition: all 0.9s;
 
     h6{
         font-size: 16px;
@@ -14,11 +16,6 @@
     }
 
     img{
-        width: 65px;
-        
+        max-width: 100%;
     }
-}
-
-.scard:hover{
-    background-color: #f8f7f7;
 }
