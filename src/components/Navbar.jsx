@@ -4,7 +4,7 @@ import Logo from '../img/logo.svg'
 function Navbar() {
     return (
         <>
-            <header className='sticky-top '>
+            <header className='sticky-top w-100 '>
                 <nav className="navbar navbar-expand-lg bg-body-tertiary d-none d-lg-block ">
                     <div className="container d-flex align-items-centre">
                         <div className='d-flex align-items-center gap-3'>
