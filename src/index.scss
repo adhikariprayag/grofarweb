@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.bg-success {
+  background-color: #28A745 !important;
+
+  @media (max-width:992px) {
+    background-color: white !important;
+  }
+}
+
+.btn-success {
+  background-color: #28A745 !important;
+}
+
+.navbar{
+
+.text-light {
+  color: #fff;
+
+  @media (max-width:992px) {
+    color: #000 !important;
+  }
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 400;
+
+  @media (max-width:992px) {
+    color: #000 !important;
+  }
+}
+
+.dropdown-item {
+  color: #000 !important;
+  font-weight: 300;
+}
+
+.dropdown-item:hover {
+  background-color: #e9e8e8 !important;
+}
+
+.dropdown-divider {
+  background-color: #e9e8e8 !important;
+}
+
+.logo-img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-img-lg {
+  height: 45px;
+}
+
+.navbar-toggler {
+  outline: none !important;
+  border: none !important;
+  color: transparent;
+}
+
+.navbar-toggler i:hover {
+  color: #00000084 !important;
+  transition: all 0.3s;
+}
+
+.btn {
+  outline: none !important;
+  border: none !important;
+}
+
+.text-top-nav {
+  color: #000 !important;
+}
+
+
+.top-navbar a{
+  color: #000 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.top-navbar a:hover{
+  background-color: #e9e8e8;
+}
+
+.navbar input{
+  font-size: 14px !important;
+}
+}
+
+.main-title{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.title-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-btn{
+  border: 1.5px solid #28A745;
+  border-radius: 3px;
+  padding: .5px 5px;
+
+  a{
+    padding: 0px;
+    text-decoration: none;
+    color: #28A745;
+    font-weight: lighter;
+  }
+}
+
+.main-btn:hover{
+  background-color: #28A745;
+  cursor: pointer;
+
+  a{
+    color: white;
+  }
+}
