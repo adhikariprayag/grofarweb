@@ -4,8 +4,20 @@ main {
     }
 
     .carousel-container {
-        max-width: 1100px;
+        margin: auto;
+        max-width: 1200px;
         padding: 0px 20px;
+    }
+
+    .scard-container{
+        display: flex;
+        gap: 15px;
+        max-width: 1200px;
+        overflow-x: scroll;
+        margin: auto;
+
+    }
+    .promo {
         img {
             border-radius: 25px;
             max-width: 100%;

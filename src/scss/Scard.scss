@@ -1,0 +1,24 @@
+.scard{
+    width: 140px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    h6{
+        font-size: 16px;
+        text-decoration: none !important;
+    }
+
+    img{
+        width: 65px;
+        
+    }
+}
+
+.scard:hover{
+    background-color: #f8f7f7;
+}

@@ -6,11 +6,13 @@ import Promo1 from '../img/promo1.jpg'
 import Promo2 from '../img/promo2.jpg'
 import Promo3 from '../img/promo3.jpg'
 import Promo4 from '../img/promo4.jpg'
+import { category } from '../Category';
 
 // SLICK JS
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import SCard from '../components/SCard';
 
 function Home() {
 
@@ -58,6 +60,16 @@ function Home() {
                 <div className="main-btn"><a href="">See More</a></div>
               </div>
             </div>
+            <div className="carousel-container scard-container">
+              {category.map(category => (
+                <a href="cat/{category.id}" className='text-decoration-none text-dark'>
+                <SCard key={category.id}
+                  title={category.title}
+                  img={category.img} />
+                  </a>
+              ))}
+              
+            </div>
 
             <div className="col-12">
               <div className="title-container">
@@ -65,23 +77,22 @@ function Home() {
                 <div className="main-btn"><a href="">See More</a></div>
               </div>
 
-              <div className="carousel-container   py-3">
-               
-                  <Slider {...settings}>
-                    <div>
-                      <img src={Promo1} alt="" />
-                    </div>
-                    <div>
-                      <img src={Promo2} alt="" />
-                    </div>
-                    <div>
-                      <img src={Promo3} alt="" />
-                    </div>
-                    <div>
-                      <img src={Promo4} alt="" />
-                    </div>
-                  </Slider>
-                
+              <div className="carousel-container promo  py-3">
+
+                <Slider {...settings}>
+                  <div>
+                    <img src={Promo1} alt="" />
+                  </div>
+                  <div>
+                    <img src={Promo2} alt="" />
+                  </div>
+                  <div>
+                    <img src={Promo3} alt="" />
+                  </div>
+                  <div>
+                    <img src={Promo4} alt="" />
+                  </div>
+                </Slider>
 
               </div>
             </div>
