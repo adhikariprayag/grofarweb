@@ -18,6 +18,18 @@
 
 .navbar{
 
+  .small-cart-icon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  .small-cart-icon:hover{
+background-color: rgba(128, 128, 128, 0.364);
+  }
+
 .text-light {
   color: #fff;
 
@@ -98,6 +110,7 @@
   font-size: 14px !important;
 }
 }
+
 
 .main-title{
   font-size: 18px;

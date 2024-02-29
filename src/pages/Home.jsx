@@ -6,13 +6,15 @@ import Promo1 from '../img/promo1.jpg'
 import Promo2 from '../img/promo2.jpg'
 import Promo3 from '../img/promo3.jpg'
 import Promo4 from '../img/promo4.jpg'
-import { category } from '../Category';
+import { category } from '../data/Category';
+import { products } from '../data/Products';
 
 // SLICK JS
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SCard from '../components/SCard';
+import BCard from '../components/BCard';
 
 function Home() {
 
@@ -116,10 +118,12 @@ function Home() {
 
 
                   <div className='w-100 d-flex justify-content-center '>
+                    <a href="" className='text-decoration-none '>
+                      <SCard key={category.id}
+                        title={category.title}
+                        img={category.img} />
+                    </a>
 
-                    <SCard key={category.id}
-                      title={category.title}
-                      img={category.img} />
 
                   </div>
 
@@ -157,6 +161,16 @@ function Home() {
               <div className="title-container">
                 <div className="main-title">pick's today</div>
                 <div className="main-btn"><a href="">See More</a></div>
+              </div>
+
+              <div className='py-3 px-3'>
+                <div className="row  ">
+                 {products.map(products =>(
+                  <div className="col-lg-3 col-md-4 mt-3 col-sm-6 d-flex justify-content-center">
+                    <BCard img={products.img} title={products.title} price={products.price} discount={products.discount}/>
+                  </div>
+                 ))}
+                </div>
               </div>
             </div>
 

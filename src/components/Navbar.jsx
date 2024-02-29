@@ -44,9 +44,13 @@ function Navbar() {
                 <nav className="navbar navbar-expand-lg  bg-success text-light py-lg-0 shadow " data-bs-theme="dark">
                     <div className="container d-flex align-items-center justify-content-between">
                         <a className="navbar-brand fw-bold d-lg-none d-inline text-dark" href="#"><img className='rounded-circle logo-img' src={Logo} alt="" /> Grocery</a>
+                        <div className='d-flex align-items-center '>
+                        <a className='nav-link border shadow-sm rounded-circle small-cart-icon d-lg-none ' href="" title="Cart"><i className="bi bi-cart3 fs-5 "></i></a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <i className="bi bi-list fs-1 text-dark fw-bolder "></i>
                         </button>
+                        </div>
+                        
                         <div className="offcanvas offcanvas-end bg-success " tabIndex={-1} id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div className="offcanvas-header d-flex justify-content-end  d-lg-none">
                                 <button type="button" className='btn' data-bs-dismiss="offcanvas"><i className="bi bi-x-lg text-dark fs-2 fw-bold "></i> </button>

@@ -1,0 +1,48 @@
+.bcard {
+    max-width: 280px;
+    height: 280px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .img-container {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .discount {
+            position: absolute;
+            top: 0px;
+            left: 10px;
+            background-color: rgba(50, 205, 50, 0.619);
+            border-radius: 5px;
+            font-size: 14px;
+            padding: 0px 5px;
+
+        }
+    }
+
+    .buttons{
+        i{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            border: 1px solid black;
+        }
+
+        i:hover{
+            cursor: pointer;
+            background-color: #FF6000;
+            color: #fff;
+        }
+    }
+
+}

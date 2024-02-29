@@ -1,11 +1,11 @@
-import a from "./img/1.svg"
-import b from './img/2.svg'
-import c from './img/3.svg'
-import d from './img/4.svg'
-import e from './img/5.svg'
-import f from './img/6.svg'
-import g from './img/7.svg'
-import h from './img/8.svg'
+import a from "../img/1.svg"
+import b from '../img/2.svg'
+import c from '../img/3.svg'
+import d from '../img/4.svg'
+import e from '../img/5.svg'
+import f from '../img/6.svg'
+import g from '../img/7.svg'
+import h from '../img/8.svg'
 
 export const category = [
     {
