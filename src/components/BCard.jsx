@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import '../scss/Bcard.scss'
-import a from '../img/v1.jpg'
 
 function BCard(props) {
 

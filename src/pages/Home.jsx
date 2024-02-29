@@ -15,6 +15,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SCard from '../components/SCard';
 import BCard from '../components/BCard';
+import Cart from './Cart';
 
 function Home() {
 
@@ -95,9 +96,8 @@ function Home() {
 
   return (
     <>
-      <Navbar />
 
-      <main className='py-5 px-2'>
+      <main className='py-3 px-2'>
         <div className='container '>
           <div className="row">
 
@@ -118,8 +118,8 @@ function Home() {
 
 
                   <div className='w-100 d-flex justify-content-center '>
-                    <a href="" className='text-decoration-none '>
-                      <SCard key={category.id}
+                    <a href="" className='text-decoration-none ' key={category.id}>
+                      <SCard 
                         title={category.title}
                         img={category.img} />
                     </a>
@@ -166,8 +166,8 @@ function Home() {
               <div className='py-3 px-3'>
                 <div className="row  ">
                  {products.map(products =>(
-                  <div className="col-lg-3 col-md-4 mt-3 col-sm-6 d-flex justify-content-center">
-                    <BCard img={products.img} title={products.title} price={products.price} discount={products.discount}/>
+                  <div className="col-lg-3 col-md-4 mt-3 col-sm-6 d-flex justify-content-center" key={products.id}>
+                    <BCard  img={products.img} title={products.title} price={products.price} discount={products.discount}/>
                   </div>
                  ))}
                 </div>
@@ -184,7 +184,6 @@ function Home() {
         </div>
       </main>
 
-      <Footer />
     </>
   )
 }
