@@ -4,16 +4,23 @@ import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import Cart from './pages/Cart'
 import Footer from './components/Footer'
+import Product from './pages/Product'
+import Stt from './components/Stt'
+import Cat from './pages/Cat'
 
 function App() {
+
   return (
     <>
     
       <BrowserRouter>
-      <Navbar size={5}/>
+      <Navbar size={Cart.length}/>
+      <Stt/>
         <Routes>
           <Route index element={<Home/>} />
           <Route path="/cart" element={<Cart/>} />
+          <Route path="/cat/:cid" element={<Cat/>} />
+          <Route path="/product/:id" element={<Product/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>

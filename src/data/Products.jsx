@@ -14,81 +14,91 @@ const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
     {
         "id": 0,
         "img": a,
-        "title": "Vegetable",
+        "title": "Chilli",
         "price": 2,
-        "discount": 3
+        "discount": 3,
+        "cat": "Vegetable"
     },
 
     {
         "id": 1,
         "img": b,
-        "title": "Fruits",
+        "title": "Onion",
         "price": 5,
-        "discount": 5
+        "discount": 5,
+        "cat": "Vegetable"
     },
 
     {
         "id": 2,
         "img": c,
-        "title": "Meat",
+        "title": "Tomato",
         "price": 8,
-        "discount": 3
+        "discount": 3,
+        "cat": "Vegetable"
     },
 
     {
         "id": 3,
         "img": d,
-        "title": "Seafood",
-        "price": 1,
-        "discount": 6
+        "title": "Cabbage",
+        "price": 1.22,
+        "discount": 6,
+        "cat": "Vegetable"
     },
 
     {
         "id": 4,
         "img": e,
-        "title": "Milk & Egg",
+        "title": "Cauliflower",
         "price": 3.8,
-        "discount": 33
+        "discount": 33,
+        "cat": "Vegetable"
     },
 
     {
         "id": 5,
         "img": f,
-        "title": "Bread",
+        "title": "Carrot",
         "price": 2.45,
-        "discount": 34
+        "discount": 34,
+        "cat": "Fruits"
     },
 
     {
         "id": 6,
         "img": g,
-        "title": "Frozen",
+        "title": "Beans",
         "price": 4.2,
-        "discount": 12
+        "discount": 12,
+        "cat": "Organic"
     },
 
     {
         "id": 7,
         "img": h,
-        "title": "Organic",
+        "title": "Cookies",
         "price": 2.9,
-        "discount": 6.6
+        "discount": 6.6,
+        "cat": "Bread"
     },
 
     {
         "id": 8,
         "img": i,
-        "title": "Organic",
+        "title": "Bean",
         "price": 2.6,
-        "discount": 3.33
+        "discount": 3.33,
+        "cat": "Organic"
     },
 
     {
         "id": 9,
         "img": j,
-        "title": "Organic",
+        "title": "Beetroot",
         "price": 9.8,
-        "discount": 6.45
+        "discount": 6.45,
+        "cat": "Organic"
     }
 ]
 
